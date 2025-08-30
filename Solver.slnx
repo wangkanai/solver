@@ -14,6 +14,8 @@
     <File Path="README.md" />
     <File Path="sign.ps1" />
     <File Path=".gitignore" />
+    <File Path="Directory.Build.targets" />
+    <File Path=".editorconfig" />
   </Folder>
   <Project Path="benchmark\Wangkanai.Solver.Benchmark.csproj" Type="Classic C#" />
   <Project Path="src\Wangkanai.Solver.csproj" Type="Classic C#" />

@@ -1,16 +1,16 @@
 #!/usr/bin/env pwsh
 
-$ErrorActionPreference = "Stop"
+$ErrorActionPreference="Stop"
 
 # Change to script directory
 Set-Location $PSScriptRoot
 
 Write-Host "=== Building Wangkanai.Solver ===" -ForegroundColor Green
-Write-Host "Working Directory: $(Get-Location)" -ForegroundColor Cyan
+Write-Host "Working Directory: $( Get-Location )" -ForegroundColor Cyan
 Write-Host "Dotnet version:" -ForegroundColor Yellow
 dotnet --version
 
-Write-Host "Solution file exists: $(Test-Path 'solver.sln')" -ForegroundColor Cyan
+Write-Host "Solution file exists: $( Test-Path 'solver.sln' )" -ForegroundColor Cyan
 
 Write-Host "Cleaning solution..." -ForegroundColor Yellow
 dotnet clean Solver.slnx

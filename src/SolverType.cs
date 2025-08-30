@@ -4,10 +4,10 @@ namespace Wangkanai.Solver;
 
 public enum SolverType
 {
-	Linear,
-	Nonlinear,
-	Quadratic,
-	Integer,
-	Stochastic,
-	Cubic
+   Linear,
+   Nonlinear,
+   Quadratic,
+   Integer,
+   Stochastic,
+   Cubic
 }

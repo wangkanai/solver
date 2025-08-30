@@ -9,7 +9,8 @@ The goal is to enable solutions for challenges like optimum manufacturing produc
 
 The path to solving these problems is filled with obstacles and challenges.
 Yet, with the collective strength of a community of developers, we can overcome these hurdles.
-So, join us on this exciting journey. Your stars :star: will not only motivate us but also help us reach more people and gather a community of like-minded developers eager to revolutionize mathematical problem solving.
+So, join us on this exciting journey. Your stars :star: will not only motivate us but also help us reach more people and gather a community of like-minded developers eager to revolutionize
+mathematical problem solving.
 
 ### Roadmap
 
