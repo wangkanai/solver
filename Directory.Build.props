@@ -35,4 +35,14 @@
    <PropertyGroup>
       <RepoRoot Condition=" '$(RepoRoot)' == '' OR !HasTrailingSlash('$(RepoRoot)') ">$(MSBuildThisFileDirectory)</RepoRoot>
    </PropertyGroup>
+
+   <PropertyGroup Condition="'$(MSBuildProjectName)' == 'Wangkanai.Solver'">
+      <PackageIcon>wangkanai-logo.png</PackageIcon>
+      <PackageReadmeFile>README.md</PackageReadmeFile>
+   </PropertyGroup>
+
+   <ItemGroup Condition="'$(MSBuildProjectName)' == 'Wangkanai.Solver'">
+      <None Include="$(RepoRoot)\assets\wangkanai-logo.png" Pack="true" PackagePath="\" />
+      <None Include="$(RepoRoot)\README.md" Pack="true" PackagePath="\" />
+   </ItemGroup>
 </Project>
