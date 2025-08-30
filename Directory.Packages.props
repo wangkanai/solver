@@ -22,6 +22,6 @@
     <PackageVersion Include="BenchmarkDotNet" Version="0.13.12" />
 
     <!-- Wangkanai Packages -->
-    <PackageVersion Include="Wangkanai.System" Version="2.4.0" />
+    <PackageVersion Include="Wangkanai.System" Version="3.0.0" />
   </ItemGroup>
 </Project>
