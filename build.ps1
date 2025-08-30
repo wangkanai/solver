@@ -13,18 +13,18 @@ dotnet --version
 Write-Host "Solution file exists: $(Test-Path 'solver.sln')" -ForegroundColor Cyan
 
 Write-Host "Cleaning solution..." -ForegroundColor Yellow
-dotnet clean solver.sln
+dotnet clean Solver.slnx
 
 Write-Host "Restoring packages..." -ForegroundColor Yellow
-dotnet restore solver.sln
+dotnet restore Solver.slnx
 
 Write-Host "Building solution..." -ForegroundColor Yellow
-dotnet build solver.sln --configuration Release --no-restore
+dotnet build Solver.slnx--configuration Release --no-restore
 
 Write-Host "Running tests..." -ForegroundColor Yellow
-dotnet test solver.sln --configuration Release --no-build --verbosity minimal
+dotnet test Solver.slnx --configuration Release --no-build --verbosity minimal
 
 Write-Host "Creating packages..." -ForegroundColor Yellow
-dotnet pack solver.sln --configuration Release --no-build --verbosity minimal
+dotnet pack Solver.slnx --configuration Release --no-build --verbosity minimal
 
 Write-Host "=== Build Complete ===" -ForegroundColor Green

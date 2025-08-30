@@ -1,0 +1,21 @@
+﻿<Solution>
+  <Folder Name="/.claude/" />
+  <Folder Name="/.github/">
+    <File Path=".github\FUNDING.yml" />
+    <File Path=".github\RELEASE.yml" />
+    <File Path=".github\workflows\dotnet.yml" />
+  </Folder>
+  <Folder Name="/.solutions/">
+    <File Path="build.ps1" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="LICENSE" />
+    <File Path="md-styles.css" />
+    <File Path="README.md" />
+    <File Path="sign.ps1" />
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="benchmark\Wangkanai.Solver.Benchmark.csproj" Type="Classic C#" />
+  <Project Path="src\Wangkanai.Solver.csproj" Type="Classic C#" />
+  <Project Path="tests\Wangkanai.Solver.Tests.csproj" Type="Classic C#" />
+</Solution>
