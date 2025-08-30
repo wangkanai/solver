@@ -1,5 +1,10 @@
 <Project>
    <PropertyGroup>
+      <VersionPrefix>2.4.0</VersionPrefix>
+      <Title>Wangkanai Solver</Title>
+      <PackageTags>aspnetcore;solver;optimization;simludation;scheduling;</PackageTags>
+      <Description>Embrace Wangkanai Solver, a mathematical powerhouse for handling complex optimization and simulation problems. Great for finding optimal solutions within extensive datasets, and modeling intricate systems.</Description>
+
       <Company>Wangkanai</Company>
       <Authors>Sarin Na Wangkanai</Authors>
       <Copyright>©2014-2025 Sarin Na Wangkanai, All rights reserved</Copyright>
