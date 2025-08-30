@@ -19,7 +19,7 @@ Write-Host "Restoring packages..." -ForegroundColor Yellow
 dotnet restore Solver.slnx
 
 Write-Host "Building solution..." -ForegroundColor Yellow
-dotnet build Solver.slnx--configuration Release --no-restore
+dotnet build Solver.slnx --configuration Release --no-restore
 
 Write-Host "Running tests..." -ForegroundColor Yellow
 dotnet test Solver.slnx --configuration Release --no-build --verbosity minimal
