@@ -123,14 +123,12 @@ jobs:
 
       - name: Restore dependencies
         run: |
-          # Optimized restore with stable settings
-          dotnet restore --verbosity minimal
+          dotnet restore Solver.slnx
         shell: bash
 
       - name: Build
         run: |
-          # Stable build with proven optimizations
-          dotnet build --no-restore -c Release \
+          dotnet build Solver.slnx --no-restore -c Release \
             -p:TreatWarningsAsErrors=false \
             -p:ContinuousIntegrationBuild=true \
             -p:Deterministic=true \
