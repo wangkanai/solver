@@ -17,7 +17,11 @@
     <File Path="Directory.Build.targets" />
     <File Path=".editorconfig" />
   </Folder>
-  <Project Path="benchmark\Wangkanai.Solver.Benchmark.csproj" Type="Classic C#" />
+  <Folder Name="/benchmark/">
+    <Project Path="benchmark\Wangkanai.Solver.Benchmark.csproj" Type="Classic C#" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests\Wangkanai.Solver.Tests.csproj" Type="Classic C#" />
+  </Folder>
   <Project Path="src\Wangkanai.Solver.csproj" Type="Classic C#" />
-  <Project Path="tests\Wangkanai.Solver.Tests.csproj" Type="Classic C#" />
 </Solution>
