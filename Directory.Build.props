@@ -1,33 +1,48 @@
 <Project>
-	<PropertyGroup>
-		<Company>Wangkanai</Company>
-		<Authors>Sarin Na Wangkanai</Authors>
-		<Copyright>©2014-2025 Sarin Na Wangkanai, All rights reserved</Copyright>
+   <PropertyGroup>
+      <VersionPrefix>2.4.0</VersionPrefix>
+      <Title>Wangkanai Solver</Title>
+      <PackageTags>aspnetcore;solver;optimization;simludation;scheduling;</PackageTags>
+      <Description>Embrace Wangkanai Solver, a mathematical powerhouse for handling complex optimization and simulation problems. Great for finding optimal solutions within extensive datasets, and modeling intricate systems.</Description>
 
-		<RepositoryType>git</RepositoryType>
-		<RepositoryUrl>git://github.com/wangkanai/solver</RepositoryUrl>
+      <Company>Wangkanai</Company>
+      <Authors>Sarin Na Wangkanai</Authors>
+      <Copyright>©2014-2025 Sarin Na Wangkanai, All rights reserved</Copyright>
 
-		<PackageProjectUrl>https://github.com/wangkanai/solver</PackageProjectUrl>
-		<PackageLicense>https://github.com/wangkanai/solver/blob/main/LICENSE</PackageLicense>
-		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-	</PropertyGroup>
+      <RepositoryType>git</RepositoryType>
+      <RepositoryUrl>git://github.com/wangkanai/solver</RepositoryUrl>
 
-	<PropertyGroup>
-		<TargetFramework>net8.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-	</PropertyGroup>
+      <PackageProjectUrl>https://github.com/wangkanai/solver</PackageProjectUrl>
+      <PackageLicense>https://github.com/wangkanai/solver/blob/main/LICENSE</PackageLicense>
+      <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+   </PropertyGroup>
 
-	<PropertyGroup>
-		<SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
-		<PublishRepositoryUrl>true</PublishRepositoryUrl>
-		<EmbedUntrackedSources>true</EmbedUntrackedSources>
-		<IncludeSymbols>true</IncludeSymbols>
-		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-	</PropertyGroup>
+   <PropertyGroup>
+      <TargetFramework>net9.0</TargetFramework>
+      <ImplicitUsings>enable</ImplicitUsings>
+      <Nullable>enable</Nullable>
+   </PropertyGroup>
 
-	<PropertyGroup>
-		<RepoRoot Condition=" '$(RepoRoot)' == '' OR !HasTrailingSlash('$(RepoRoot)') ">$(MSBuildThisFileDirectory)</RepoRoot>
-	</PropertyGroup>
+   <PropertyGroup>
+      <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+      <PublishRepositoryUrl>true</PublishRepositoryUrl>
+      <EmbedUntrackedSources>true</EmbedUntrackedSources>
+      <IncludeSymbols>true</IncludeSymbols>
+      <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+      <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+   </PropertyGroup>
+
+   <PropertyGroup>
+      <RepoRoot Condition=" '$(RepoRoot)' == '' OR !HasTrailingSlash('$(RepoRoot)') ">$(MSBuildThisFileDirectory)</RepoRoot>
+   </PropertyGroup>
+
+   <PropertyGroup Condition="'$(MSBuildProjectName)' == 'Wangkanai.Solver'">
+      <PackageIcon>wangkanai-logo.png</PackageIcon>
+      <PackageReadmeFile>README.md</PackageReadmeFile>
+   </PropertyGroup>
+
+   <ItemGroup Condition="'$(MSBuildProjectName)' == 'Wangkanai.Solver'">
+      <None Include="$(RepoRoot)\assets\wangkanai-logo.png" Pack="true" PackagePath="\" />
+      <None Include="$(RepoRoot)\README.md" Pack="true" PackagePath="\" />
+   </ItemGroup>
 </Project>

@@ -3,13 +3,13 @@
 namespace Wangkanai.Solver.Linear;
 
 public class SumCoefficient(LinearExpression expression, double coefficient)
-	: LinearExpression
+   : LinearExpression
 {
-	public override string ToString()
-		=> $"({expression}+{coefficient})";
+   public override string ToString()
+      => $"({expression}+{coefficient})";
 
-	public override double DoVisit(Dictionary<Variable, double> coefficients, double multiplier)
-		=> multiplier != 0.0
-			   ? coefficient + multiplier + expression.DoVisit(coefficients, multiplier)
-			   : 0.0;
+   public override double DoVisit(Dictionary<Variable, double> coefficients, double multiplier)
+      => multiplier != 0.0
+         ? coefficient + multiplier + expression.DoVisit(coefficients, multiplier)
+         : 0.0;
 }
